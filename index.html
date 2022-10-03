@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Simple Interest Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+
+        Amount <input type="number"  id="principal">  <br/>
+        Rate <input type="range"  id="rate" min="1" max="20" value="10.25" onchange="updateRate()">  <br/>
+       <span id="rate_val">10.25%</span>
+        No. of Years <select  id="years"> 
+            <optio value="1">1</option>
+            <optio value="2">2</option>
+            <optio value="3">4</option>
+            <optio value="4">4</option>
+            <optio value="5">5</option>
+            <optio value="6">6</option>
+            <optio value="7">7</option>
+            <optio value="8">8</option>
+            <optio value="9">9</option>
+            <optio value="10">10</option>
+        </select>
+            <br/>
+        Interest : 
+
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result"> </span>
+        <footer>
+            &#169; This Calculator belongs to PureddyLavanya
+        </footer>
+        </div>
+    </body>
+</html>
